@@ -8,6 +8,7 @@ export default defineConfig({
       '@': '/src',
       '@components': '/src/components',
       '@shared': '/src/components/shared',
+      '@models': '/src/models',
     },
   },
   server: {
