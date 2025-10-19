@@ -1,0 +1,26 @@
+.wrap-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+
+  .wrap-image {
+    width: 100%;
+    position: relative;
+
+    &::after {
+      display: block;
+      content: '';
+      padding-bottom: 100%; // 이것을 조절해서 사진첩의 사진 비율을 바꿀 수 있음 1:1 비율
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      position: absolute;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
