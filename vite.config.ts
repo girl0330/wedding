@@ -9,6 +9,7 @@ export default defineConfig({
       '@components': '/src/components',
       '@shared': '/src/components/shared',
       '@models': '/src/models',
+      '@scss': '/src/scss',
     },
   },
   server: {
