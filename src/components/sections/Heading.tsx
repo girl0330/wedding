@@ -1,5 +1,5 @@
 import { parseISO, format, getDay } from 'date-fns'
-import styles from '../sections/Heading.module.scss'
+import styles from './Heading.module.scss'
 import classNames from 'classnames/bind'
 import Section from '../shared/Section'
 
