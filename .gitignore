@@ -31,3 +31,5 @@ dist-ssr
 !.yarn/sdks
 !.yarn/patches
 !.yarn/versions
+
+.env
