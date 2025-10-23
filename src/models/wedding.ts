@@ -26,8 +26,8 @@ export interface Location {
 
 export interface Account {
   bankName: string
-  accontNumber: string
-  kakaopayLink: string
+  accountNumber: string
+  kakaopayLink?: string
 }
 
 export interface Person {
