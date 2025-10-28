@@ -14,6 +14,7 @@ import Calendar from './components/sections/Calendar'
 import Map from './components/sections/Map'
 import Contact from './components/sections/Contact'
 import Share from './components/sections/Share'
+import Modal from './components/shared/Modal'
 
 const cx = classNames.bind(styles)
 
@@ -90,6 +91,24 @@ function App() {
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
+
+      <Modal
+        open={true}
+        title="참석 희망 여부 조사"
+        body={
+          <div>
+            <input />
+          </div>
+        }
+        rightButtonLabel="불참"
+        leftButtonLabel="참석"
+        onRightButtonClick={() => {
+          alert('오른쪽 클릭')
+        }}
+        onLeftButtonClick={() => {
+          alert('왼쪽 클릭')
+        }}
+      ></Modal>
     </div>
   )
 }
